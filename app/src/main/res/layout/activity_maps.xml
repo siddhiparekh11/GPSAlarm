@@ -1,0 +1,77 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="#000000"
+
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp">
+
+        <fragment
+            android:id="@+id/place_autocomplete_fragment"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:name="com.google.android.gms.location.places.ui.PlaceAutocompleteFragment"
+            />
+    </LinearLayout>
+
+
+        <fragment
+            android:id="@+id/map"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            tools:context="com.example.mapwithmarker.MapsMarkerActivity" />
+
+
+
+
+        <!--EditText
+            android:id="@+id/destination"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/rounded_corners_edittext"
+            android:textAlignment="center"
+            android:ems="10"
+           android:layout_gravity="center"
+            android:hint="Destination" /-->
+
+        <Button
+            android:id="@+id/getlatlong"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+
+            android:layout_gravity="center"
+            android:background="@drawable/rounded_corners_button"
+            android:textColor="#000000"
+            android:layout_height="wrap_content"
+            android:onClick="onGetLatLng"
+            android:text="Set Destination" />
+    <Button
+        android:id="@+id/next"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:enabled="false"
+        android:layout_gravity="center"
+        android:background="@drawable/rounded_corners_disable"
+        android:textColor="#000000"
+        android:layout_height="wrap_content"
+        android:onClick="onNext"
+        android:text="Next" />
+
+
+    </LinearLayout>
+
+
+
+
+
+
+
+
+
