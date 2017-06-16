@@ -142,7 +142,7 @@ public class GeoFencingIntentService extends IntentService {
         }
         String triggeringGeofencesIdsString = TextUtils.join(", ",  triggeringGeofencesIdsList);
 
-        return geofenceTransitionString + ": " + triggeringGeofencesIdsString;
+        return geofenceTransitionString ;
     }
     private String getTransitionString(int transitionType) {
         switch (transitionType) {
